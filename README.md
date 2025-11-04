@@ -1,9 +1,4 @@
-# Project A Instructions for CS 135 in Fall 2025
 
-Instruction webpage:
-<https://www.cs.tufts.edu/cs/135/2025f/projectA.html>
-
-Remember that it might be helpful to do the day10 lab before tackling Problem1
 
 ## Data citation
 
