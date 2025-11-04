@@ -1,3 +1,20 @@
+## Project Summary: Automatic Reading Level Assessment
+
+This project aims to automate the assessment of reading difficulty for text passages to better support students’ reading development. Traditionally, determining a passage’s reading level is done manually—a time-consuming process that limits the availability of appropriately leveled texts and leads to repetitive, one-size-fits-all reading assignments.
+
+To address this, the project develops a machine learning pipeline that automatically classifies text passages by reading level. The approach involves:
+
+
+
+**Feature engineering:** Using a Bag-of-Words (BoW) representation to convert text into numerical features. scikit-learn TfidfVectorizer (tuned `min_df`, `max_df`, `ngram_range`, `English stop words`).
+
+**Classifier:** logistic regression (L2) with hyperparameter C (inverse regularization) tuned by grid search. Revising the pipeline based on evaluation results to improve accuracy and robustness.
+
+**Evaluation:** Assessing the classifier’s performance on held-out test data to measure generalization ability. 5‑fold cross validation (`AUROC / roc_auc`) used for model selection. We also compute out‑of‑fold predictions with   cross_val_predict   for fair error analysis.
+
+**Submission:** the notebook writes predictions for `x_test.csv` to   yproba1_test.txt   (integer labels).
+
+
 
 
 ## Data citation
